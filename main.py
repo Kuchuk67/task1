@@ -1,1 +1,1 @@
-print('gfhgfh')
+print('000 333')
