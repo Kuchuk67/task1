@@ -1,0 +1,38 @@
+[
+{
+    "model": "users.customuser",
+    "pk": 1,
+    "fields": {
+        "password": "pbkdf2_sha256$1000000$aLHnlSQlVfgvzxJDRFqnIY$ogjpEAURJsf7MHj29dUUtZq5ko40uk+ZZ9ES0Bbmdmk=",
+        "last_login": "2025-04-23T12:34:52.471Z",
+        "is_superuser": true,
+        "first_name": "",
+        "last_name": "",
+        "is_staff": true,
+        "date_joined": "2025-04-23T05:33:31.266Z",
+        "email": "admin@mail.ru",
+        "is_active": true,
+        "api_telegram": null,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "users.customuser",
+    "pk": 2,
+    "fields": {
+        "password": "pbkdf2_sha256$1000000$YT8Q9ndFF3XJpf90fQi9Bt$o3DcOsWxc4XO1PP4FAmNDw+l7Qn6pjGFHoBJTenI6Ew=",
+        "last_login": null,
+        "is_superuser": true,
+        "first_name": "",
+        "last_name": "",
+        "is_staff": true,
+        "date_joined": "2025-04-23T05:33:32.608Z",
+        "email": "user@mail.ru",
+        "is_active": true,
+        "api_telegram": null,
+        "groups": [],
+        "user_permissions": []
+    }
+}
+]
