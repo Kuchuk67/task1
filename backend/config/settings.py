@@ -20,11 +20,11 @@ from dotenv import load_dotenv
 # Загрузка переменных из .env-файла
 load_dotenv()
 
-SQL_HOST = os.getenv("SQL_HOST")
-SQL_DATABASE = os.getenv("SQL_DATABASE")
-SQL_USER = os.getenv("SQL_USER")
-SQL_PASS = os.getenv("SQL_PASS")
-SQL_PORT = os.getenv("SQL_PORT")
+SQL_HOST = os.getenv("POSTGRES_HOST")
+SQL_DATABASE = os.getenv("POSTGRES_DB")
+SQL_USER = os.getenv("POSTGRES_USER")
+SQL_PASS = os.getenv("POSTGRES_PASSWORD")
+SQL_PORT = os.getenv("POSTGRES_PORT")
 
 BOT_TOKEN = os.getenv("BOT_TOKEN")
 
