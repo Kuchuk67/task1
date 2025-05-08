@@ -1,0 +1,37 @@
+[tool.poetry]
+name = "tracker"
+version = "0.1.0"
+description = ""
+authors = ["Serg Kuchukov Office <kuchukov.sergey@gmail.ru>"]
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.12"
+python-dotenv = "^1.1.0"
+django = "^5.2"
+psycopg2-binary = "^2.9.10"
+djangorestframework = "^3.16.0"
+django-cors-headers = "^4.7.0"
+drf-spectacular = "^0.28.0"
+drf-yasg = "^1.21.10"
+djangorestframework-simplejwt = "^5.5.0"
+pillow = "^11.2.1"
+python-telegram-bot = "^22.0"
+aiogram = "^3.20.0.post0"
+channels = "^4.2.2"
+celery = "^5.5.2"
+django-celery-beat = "^2.8.0"
+redis = "^5.2.1"
+requests = "^2.32.3"
+
+
+[tool.poetry.group.link.dependencies]
+flake8 = "^7.2.0"
+mypy = "^1.15.0"
+black = "^25.1.0"
+isort = "^6.0.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
