@@ -52,6 +52,33 @@ services:
       - backend
     depends_on: 
       - db
+
+  celery_worker:
+    build:
+      dockerfile: ./backend/docker/django/Dockerfile
+    command: /start_celeryworker
+    networks:
+      - backend
+    volumes:
+      - celery:/celery
+    depends_on:
+      - redis
+      - db
+      - django
+
+  celery_beat:
+    build:
+      dockerfile: ./backend/docker/django/Dockerfile
+    command: /start_celerybeat
+    volumes:
+      - celery:/celery
+    networks:
+      - backend
+    depends_on:
+      - redis
+      - db
+      - django
+
 volumes:
   postgres_data:
   celery:
