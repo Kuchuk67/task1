@@ -54,7 +54,9 @@ services:
       - db
 
   celery_worker:
+    #image: celery_worker
     build:
+      context: .
       dockerfile: ./backend/docker/django/Dockerfile
     command: /start_celeryworker
     networks:
@@ -68,6 +70,7 @@ services:
 
   celery_beat:
     build:
+      context: .
       dockerfile: ./backend/docker/django/Dockerfile
     command: /start_celerybeat
     volumes:
